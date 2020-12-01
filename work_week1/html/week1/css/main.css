@@ -416,6 +416,75 @@ table {
   color: #fff;
 }
 
+.footer {
+  background: #AA0601;
+  color: #fff;
+  padding-top: 36px;
+  padding-bottom: 28px;
+}
+.footer .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .nav_area {
+  margin-bottom: 36px;
+}
+.footer .nav {
+  display: flex;
+}
+.footer .nav li {
+  margin-right: 48px;
+}
+.footer .nav li:last-child {
+  margin-right: 0;
+}
+.footer .media {
+  display: flex;
+}
+.footer .media div {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  margin-right: 32px;
+}
+.footer .media div:last-child {
+  margin-right: 0;
+}
+.footer .media div.icon-fb {
+  background: url(./../images/index/icon_media_fb.svg) no-repeat;
+}
+.footer .media div.icon-ig {
+  background: url(./../images/index/icon_media_ig.svg) no-repeat;
+}
+.footer .media div.icon-line {
+  background: url(./../images/index/icon_media_line.svg) no-repeat;
+}
+.footer .contact_us {
+  line-height: 3rem;
+  font-size: 2.25rem;
+  border-bottom: 1px solid #fff;
+}
+.footer .contact_us li {
+  display: flex;
+  margin-bottom: 19px;
+}
+.footer .contact_us span {
+  display: inline-block;
+  margin-right: 12px;
+}
+.footer .contact_us .icon_phone {
+  width: 48px;
+  height: 44px;
+  background: url(./../images/index/icon_phone.svg) no-repeat;
+  vertical-align: middle;
+}
+.footer .contact_us .icon_mail {
+  width: 48px;
+  height: 48px;
+  background: url(./../images/index/icon_mail.svg) no-repeat;
+  vertical-align: middle;
+}
 /*-----------------*\
     以下為版面控制
 \*-----------------*/
