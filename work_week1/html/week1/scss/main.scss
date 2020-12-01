@@ -1,1 +1,42 @@
+//reset <--基本設定
 @import './base/reset.scss';
+@import './base/fonts.scss';
+
+//pages <--頁面
+@import './pages/index.scss';
+
+//layout <--重複的頁面
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+
+/*-----------------*\
+    以下為版面控制
+\*-----------------*/
+body{
+    font-family: "my_font";
+}
+button,input,textarea{
+    outline: none;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+h2{
+    line-height: 5.625rem;
+    font-size: 3rem;
+    color: #650300;
+    text-align: center;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+// @media(max-width:968px;){
+
+// }

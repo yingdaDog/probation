@@ -1,7 +1,6 @@
 {
     "liveSassCompile.settings.formats":[
         {
-            "format": "compressed",
             "savePath": "/css"
         }
     ]
