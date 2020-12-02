@@ -103,6 +103,7 @@ h2 {
    } 
   .index_banner {
     background: url(../images/index/banner-sm.png) no-repeat;
+    background-size: cover;
     h2{
         line-height: 4.786rem;
         font-size: 3.429rem;
@@ -226,4 +227,225 @@ h2 {
         height: 24px;
     }
   }
+}
+@media (max-width:400px){
+    h2{
+        line-height:33px;
+        font-size: 24px;
+    }
+    .header{
+        flex-direction: column;
+        padding: 10px 0 0 0;
+        .logo{
+            width: 48px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        .nav{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .nav li{
+            margin-right: 0;
+            width: 50%;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+            text-align: center;
+            padding: 8px 0;
+            &:hover{
+                background-image:none;
+                margin-bottom: 0;
+                a{
+                    letter-spacing: 5px;
+                    transition: .2s all ease-in-out;
+                }
+            }
+        }
+    }
+    .index_banner{
+        height: 394px;
+        line-height:394px;
+        span{
+            line-height:22px;
+            font-size:16px;
+        }
+        h2{
+            line-height:45px;
+            font-size: 32px;
+        }
+    }
+    .index_profession{
+        padding: 32px 0 12px 0;
+        .profession_type li{
+            width: 100%;
+            margin:0 0 40px 0;
+            padding: 0px 69px;
+        }
+        .profession_type li p{
+            font-size: 16px;
+            line-height:24px;
+        }
+    }
+    .index_profession h2 {
+        line-height:33px;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .index_cassic {
+        padding: 32px 0 32px 0;
+        h2{
+            margin-bottom: 20px;
+        }
+        .types li{
+            position: relative;
+            height: 134px;
+            &:hover{
+                border-radius: 0;
+                h3{
+                    @include text_hover_bottomLine;
+                }
+            }
+            .banner-1,.banner-2,.banner-3{
+                width: 100%;
+            }
+            h3{
+                color: #fff;
+                width: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                padding: 0;
+            }
+        }
+        .icon_diamond{
+            background: url(./../images/index/icon_product_diamond-white.svg)no-repeat;
+            background-size: cover;
+        }
+        .icon_sun{
+            background: url(./../images/index/icon_product_sun-white.svg)no-repeat;
+            background-size: cover;
+        }
+        .icon_thunder{
+            background: url(./../images/index/icon_product_thunder-white.svg)no-repeat;
+            background-size: cover;
+        }
+
+    }
+    .index_design{
+        padding: 32px 15px 16px 15px;
+        h2{
+            margin-bottom: 20px;
+        }
+        .design_type{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        li{
+            width: 100%;
+            margin: 0 0 16px 0;
+
+        }
+    }
+    .index_recommend{
+        padding: 32px 15px 16px 15px;
+        h2{
+            margin-bottom: 20px;
+        }
+        li{
+            width: 100%;
+            margin: 0 0 16px 0;
+        }
+        li .name{
+            line-height: 19px;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        li p {
+            line-height: 24px;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        li .time{
+            line-height: 19px;
+            font-size: 14px;
+        }
+
+    }
+    .index_contactUs{
+        padding: 32px 15px 16px 15px;
+        h2{
+            margin-bottom: 20px;
+        }
+        h3{
+            line-height:24px;
+            font-size: 16px;
+        }
+        label,input{
+            line-height:20px;
+            font-size: 14px;
+        }
+        li.button{
+            button{
+                width: 165px;
+                padding-top: 0px;
+            }
+        }
+    }
+    .footer{
+        position: relative;
+        padding: 24px 15px 20px 15px;
+        .logo{
+            display: block;
+            width: 46px;
+            height: 28px;
+            position: absolute;
+            bottom: 20px;
+            right: 15px;
+        }
+        .contact_us .icon_phone{
+            width: 20px;
+            height: 20px;
+        }
+        .contact_us .icon_mail{
+            width: 20px;
+            height: 20px;
+        }
+        .nav_area{
+            margin-bottom: 0;
+        }
+        .nav_area .nav{
+            display: none;
+        }
+        .nav_area .media{
+            position: absolute;
+            right: 15px;
+            top: 24px;
+        }
+        .copyright_area{
+            margin-top: 18px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .copyright p{
+            line-height: 19px;
+            font-size:14px;
+            margin-bottom: 7px;
+        }
+        .description{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .description li{
+            margin-right: 0;
+            margin-bottom: 8px;
+            &:hover{
+                margin-bottom: 8px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    
 }

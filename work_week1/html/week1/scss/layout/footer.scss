@@ -18,6 +18,8 @@
         margin-right: 48px;
         font-size: 16px;
         line-height:22px;
+        cursor: pointer;
+        @include text_hover_bottomLine;
         &:last-child{
             margin-right: 0;
         }
@@ -88,9 +90,6 @@
             vertical-align: middle;
         }
         .copyright{
-            .logo{
-                
-            }
         }
     }
     .contact_us a{
@@ -112,6 +111,7 @@
         width: 80px;
         height: 48px;
         background: url(../images/logo.png)no-repeat;
+        background-size: cover;
     }
     .description a{
         color: #fff;
@@ -119,6 +119,10 @@
     }
     .description li{
         margin-right: 62px;
+        @include text_hover_bottomLine;
+        &:hover{
+            margin-bottom: 0;
+        }
         &:last-child {
             margin-right: 0;
         }
