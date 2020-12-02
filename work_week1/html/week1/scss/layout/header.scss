@@ -13,9 +13,12 @@
     }
     .nav{
         display: flex;
-        font-size: 1.25rem;
+        font-size: 20px;
+        line-height:28px;
         li{
             margin-right: 64px;
+            @include text_hover_bottomLine;
+          
             &:last-child{
                 margin-right: 0;
             }

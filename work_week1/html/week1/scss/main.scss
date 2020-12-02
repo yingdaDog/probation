@@ -1,42 +1,229 @@
 //reset <--基本設定
-@import './base/reset.scss';
-@import './base/fonts.scss';
+@import "./base/reset.scss";
+@import "./base/fonts.scss";
+@import "./base/variables.scss"; //<-- 動畫與變數
 
 //pages <--頁面
-@import './pages/index.scss';
+@import "./pages/index.scss";
 
 //layout <--重複的頁面
-@import './layout/header.scss';
-@import './layout/footer.scss';
-
-
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
 /*-----------------*\
     以下為版面控制
 \*-----------------*/
-body{
-    font-family: "my_font";
+body {
+  font-family: "my_font";
 }
-button,input,textarea{
-    outline: none;
+button,
+input,
+textarea {
+  outline: none;
 }
-a{
-    text-decoration:none;
+a {
+  text-decoration: none;
 }
-.container{
-    max-width: 1110px;
-    margin: 0 auto;
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
 }
-h2{
-    line-height: 5.625rem;
-    font-size: 3rem;
-    color: #650300;
-    text-align: center;
+h2 {
+  line-height: 5.625rem;
+  font-size: 3rem;
+  color: #650300;
+  text-align: center;
 }
-.row-reverse{
-    flex-direction: row-reverse;
+.row-reverse {
+  flex-direction: row-reverse;
 }
 
-// @media(max-width:968px;){
-
-// }
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+  .header {
+    padding: 30px 40px;
+  }
+  .index_banner h2 {
+    padding-right: 40px;
+  }
+  .index_profession {
+    padding: 64px 40px 80px 40px;
+  }
+  .index_cassic {
+    padding: 40px 40px 80px 40px;
+  }
+  .index_design {
+    padding: 40px 40px 80px 40px;
+  }
+  .index_recommend {
+    padding: 40px 40px 64px 40px;
+  }
+  .index_contactUs{
+    padding: 40px 104px 48px 104px;
+  }
+  .footer {
+    padding: 36px 40px 28px 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .index_cassic {
+  }
+  .index_cassic {
+    .types li {
+      height: 168px;
+    }
+    .icon_diamond,
+    .icon_sun,
+    .icon_thunder {
+      width: 2.286rem;
+      height: 2.286rem;
+    }
+    .icon_diamond {
+      width: 2.8rem;
+    }
+    .icon_thunder {
+      width: 1.7rem;
+    }
+    li h3 {
+      font-size: 2rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+    h2{
+        line-height: 3.214rem;
+        font-size: 2.286rem;
+    }
+   .header{
+       .nav li{
+           margin-right: 40px;
+       }
+   } 
+  .index_banner {
+    background: url(../images/index/banner-sm.png) no-repeat;
+    h2{
+        line-height: 4.786rem;
+        font-size: 3.429rem;
+    }
+    span{
+        font-size: 1.429rem;
+        line-height: 2rem;
+    }
+  }
+  .index_profession {
+    padding: 40px 40px 40px 40px;
+    
+  }
+  .index_profession h2{
+    line-height: 3.214rem;
+    font-size: 2.286rem;
+    margin-bottom: 32px;
+  }
+  .index_profession .profession_type {
+    flex-wrap: wrap;
+    .icon-1,
+    .icon-2,
+    .icon-3,
+    .icon-4 {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 16px;
+    }
+  }
+  .index_profession .profession_type li {
+    width: calc(100% / 2 - 15px);
+    margin-right: 30px;
+    margin-bottom: 40px;
+    padding: 0px 28px;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  .index_cassic {
+      h2{
+          margin-bottom: 32px;
+      }
+    .types li {
+      height: 168px;
+    }
+  }
+  .row-reverse {
+    flex-direction: row;
+  }
+  .index_cassic li.row-reverse h3 {
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+  }
+  .index_design {
+      li{
+        height: 280px;
+        line-height:280px;
+      }
+      li p{
+        font-size: 2.286rem;
+      }
+  }
+  .index_recommend h2{
+      margin-bottom: 32px;
+  }
+  .index_recommend ul {
+    flex-wrap: wrap;
+  }
+  .index_recommend li {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 28px;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  .index_contactUs {
+    
+    h2{
+        margin-bottom: 16px;
+    }
+    h3{
+        line-height: 1.714rem;
+        font-size: 1.143rem;
+    }
+    input,textarea{
+        padding: 8px 0 8px 12px;
+        width: calc(100% - 12px);
+    }
+    li.button button{
+        width: 210px;
+        height: 36px;
+    }
+  }
+  .footer{
+    .logo{
+        display: none;
+    }
+    .nav li{
+          margin-right: 40px;
+      }
+    .media div{
+        width: 24px;
+        height: 24px;
+        margin-right: 24px;
+    }
+    .contact_us{
+        line-height: 26px;
+        font-size: 20px;
+        padding-bottom: 16px;
+    }
+    .contact_us li{
+        margin-bottom: 8px;
+    }
+    .contact_us .icon_mail{
+        width: 32px;
+        height: 32px;
+    }
+    .contact_us .icon_phone{
+        width: 32px;
+        height: 24px;
+    }
+  }
+}

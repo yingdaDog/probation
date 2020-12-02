@@ -16,6 +16,8 @@
     }
     .nav li{
         margin-right: 48px;
+        font-size: 16px;
+        line-height:22px;
         &:last-child{
             margin-right: 0;
         }
@@ -33,12 +35,27 @@
         }
         &.icon-fb{
             background: url(./../images/index/icon_media_fb.svg)no-repeat;
+            background-size: contain;
+            &:hover{
+                transition: all .2s ease-in-out;
+                filter: invert(35%) sepia(9%) saturate(3460%) hue-rotate(183deg) brightness(91%) contrast(89%);
+            }
         }
         &.icon-ig{
             background: url(./../images/index/icon_media_ig.svg)no-repeat;
+            background-size: contain;
+            &:hover{
+                transition: all .2s ease-in-out;
+                filter: invert(26%) sepia(66%) saturate(1718%) hue-rotate(299deg) brightness(97%) contrast(91%);
+            }
         }
         &.icon-line{
             background: url(./../images/index/icon_media_line.svg)no-repeat;
+            background-size: contain;
+            &:hover{
+                transition: all .2s ease-in-out;
+                filter: invert(56%) sepia(74%) saturate(483%) hue-rotate(65deg) brightness(90%) contrast(85%);
+            }
         }
     }
     .contact_us{
@@ -60,12 +77,14 @@
             width: 48px;
             height: 44px;
             background: url(./../images/index/icon_phone.svg)no-repeat;
+            background-size: contain;
             vertical-align: middle;
         }
         .icon_mail{
             width: 48px;
             height: 48px;
             background: url(./../images/index/icon_mail.svg)no-repeat;
+            background-size: contain;
             vertical-align: middle;
         }
         .copyright{
@@ -74,5 +93,36 @@
             }
         }
     }
+    .contact_us a{
+        color: #fff;
+    }
+    .copyright_area{
+        margin-top: 24px;
+    }
+    .copyright,.description{
+        display: flex;
+        align-items: center;
+    }
+    .copyright p{
+        line-height: 21px;
+        font-size:16px;
+    }
+    .logo{
+        margin-right: 38px;
+        width: 80px;
+        height: 48px;
+        background: url(../images/logo.png)no-repeat;
+    }
+    .description a{
+        color: #fff;
+        font-size: 1rem;
+    }
+    .description li{
+        margin-right: 62px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
 
 }
