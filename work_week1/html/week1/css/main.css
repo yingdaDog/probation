@@ -422,6 +422,13 @@ table {
   font-weight: bold;
   cursor: pointer;
 }
+.index_contactUs li.button button:hover {
+  letter-spacing: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.index_contactUs li.button button:active {
+  background: #007aff;
+}
 .index_contactUs h3 {
   line-height: 1.875rem;
   font-size: 1.25rem;
@@ -448,6 +455,10 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .header .logo {
   width: 80px;
@@ -619,11 +630,51 @@ table {
   margin-right: 0;
 }
 
+.js-to-top {
+  position: fixed;
+  display: inline-block;
+  background: #AA0601;
+  right: 15px;
+  bottom: 23vh;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  border-radius: 100%;
+  transition: 0.3s ease-in-out;
+  cursor: none;
+  z-index: 1;
+}
+.js-to-top:after, .js-to-top:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 4px;
+  height: 15px;
+}
+.js-to-top:before {
+  transform: translate(calc((-50% + 4px)), -50%) rotate(-45deg);
+}
+.js-to-top:after {
+  transform: translate(calc((-50% - 4px)), -50%) rotate(45deg);
+}
+.js-to-top:active {
+  transition: 0.3s ease-in-out;
+  transform: scale(0.9);
+}
+.js-to-top.active {
+  transition: 0.3s ease-in-out;
+  opacity: 0.6;
+  cursor: pointer;
+}
 /*-----------------*\
     以下為版面控制
 \*-----------------*/
 body {
   font-family: "my_font";
+  position: relative;
 }
 
 button,

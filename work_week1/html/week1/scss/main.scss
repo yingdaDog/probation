@@ -1,4 +1,5 @@
 //reset <--基本設定
+
 @import "./base/reset.scss";
 @import "./base/fonts.scss";
 @import "./base/variables.scss"; //<-- 動畫與變數
@@ -9,12 +10,14 @@
 //layout <--重複的頁面
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
+@import "./layout/float_button.scss";
 
 /*-----------------*\
     以下為版面控制
 \*-----------------*/
 body {
   font-family: "my_font";
+  position: relative;
 }
 button,
 input,

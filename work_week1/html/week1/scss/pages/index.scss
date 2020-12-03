@@ -348,6 +348,13 @@
       padding-top: 0px;
       font-weight: bold;
       cursor: pointer;
+      &:hover{
+        letter-spacing:5px;
+        transition: all .2s ease-in-out;
+      }
+      &:active{
+        background: #007aff;
+      }
     }
   }
   h3 {

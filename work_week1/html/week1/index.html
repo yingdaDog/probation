@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>yingda_week1</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <!--swiper.js-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
   <body>
     <div class="header">
@@ -16,11 +18,22 @@
         <li><a href="#">常見問題</a></li>
       </ul>
     </div>
-    <div class="index_banner">
-      <div class="container">
-        <h2>
-          <span>Promise-Desert 2020 早春系列</span><br />看得清，才能看得遠
-        </h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide index_banner">
+          <div class="container">
+            <h2>
+              <span>Promise-Desert 2020 早春系列</span><br />看得清，才能看得遠
+            </h2>
+          </div>
+        </div>
+        <div class="swiper-slide index_banner">
+          <div class="container">
+            <h2>
+              <span>Promise-Desert 2020 早春系列</span><br />看得清，才能看得遠
+            </h2>
+          </div>
+        </div>
       </div>
     </div>
     <div class="index_profession">
@@ -85,57 +98,57 @@
       </ul>
     </div>
     <div class="index_recommend container">
-      <h2>顧客推薦</h2>
-      <ul>
-        <li class="rec-1">
-          <div class="avatar"></div>
-          <div class="content">
-            <h3 class="name">Jessy</h3>
-            <p>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <div class="time">Last updated 3 mins ago</div>
-          </div>
-        </li>
-        <li class="rec-2">
-          <div class="avatar"></div>
-          <div class="content">
-            <h3 class="name">Karen</h3>
-            <p>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <div class="time">Last updated 3 mins ago</div>
-          </div>
-        </li>
-        <li class="rec-3">
-          <div class="avatar"></div>
-          <div class="content">
-            <h3 class="name">Chelsea</h3>
-            <p>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <div class="time">Last updated 3 mins ago</div>
-          </div>
-        </li>
-        <li class="rec-4">
-          <div class="avatar"></div>
-          <div class="content">
-            <h3 class="name">Jane</h3>
-            <p>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <div class="time">Last updated 3 mins ago</div>
-          </div>
-        </li>
-      </ul>
+        <h2>顧客推薦</h2>
+        <ul>
+            <li class="rec-1">
+                <div class="avatar"></div>
+                <div class="content">
+                    <h3 class="name">Jessy</h3>
+                    <p>
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <div class="time">Last updated 3 mins ago</div>
+                </div>
+            </li>
+            <li class="rec-2">
+                <div class="avatar"></div>
+                <div class="content">
+                    <h3 class="name">Karen</h3>
+                    <p>
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <div class="time">Last updated 3 mins ago</div>
+                </div>
+            </li>
+            <li class="rec-3">
+                <div class="avatar"></div>
+                <div class="content">
+                    <h3 class="name">Chelsea</h3>
+                    <p>
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <div class="time">Last updated 3 mins ago</div>
+                </div>
+            </li>
+            <li class="rec-4">
+                <div class="avatar"></div>
+                <div class="content">
+                    <h3 class="name">Jane</h3>
+                    <p>
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <div class="time">Last updated 3 mins ago</div>
+                </div>
+            </li>
+        </ul>
     </div>
     <div class="index_contactUs">
         <div class="container">
@@ -161,6 +174,7 @@
             </ul>
         </div>
     </div>
+    <div class="js-to-top active"></div>
     <div class="footer">
         <div class="container">
             <div class="nav_area wrap">
@@ -198,5 +212,9 @@
       // safari
       document.addEventListener('touchstart', function () { }, false);
     </script>
+    <!--swiper.js-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src = "./js/jquery-3.5.1.js"></script>
+    <script src = "./js/all.js"></script>
   </body>
 </html>
