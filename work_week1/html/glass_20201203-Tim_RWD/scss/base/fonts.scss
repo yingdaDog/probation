@@ -1,0 +1,13 @@
+//font-china
+@font-face {
+    font-family: "my_font";
+    src: url(../fonts/NotoSansTC-Medium.otf);
+    unicode-range: U+4E00-9FFF, U+2E80-2EFF;
+  }
+  
+//font-English
+@font-face {
+    font-family: "my_font";
+    src: url(../fonts/Roboto-Medium.ttf);
+    unicode-range: U+0020-007F;
+}

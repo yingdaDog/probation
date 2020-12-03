@@ -1,0 +1,30 @@
+.header{
+    background: #AA0601;
+    padding: 30px 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        width: 80px;
+        height: 48px;
+        background: url(./../images/logo.png)no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .nav{
+        display: flex;
+        font-size: 20px;
+        line-height:28px;
+        li{
+            margin-right: 64px;
+            @include text_hover_bottomLine;
+          
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        a{
+            color: #fff;
+        }
+    }
+}

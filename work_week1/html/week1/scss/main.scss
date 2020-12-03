@@ -69,8 +69,6 @@ h2 {
 }
 @media (max-width: 1000px) {
   .index_cassic {
-  }
-  .index_cassic {
     .types li {
       height: 168px;
     }
@@ -228,6 +226,181 @@ h2 {
     }
   }
 }
+@media (max-width:680px){
+  .index_cassic {
+    padding: 32px 0 32px 0;
+    h2{
+        margin-bottom: 20px;
+    }
+    .types li{
+        position: relative;
+        height: 134px;
+        h3{
+          background-position: center bottom;
+          background-size: 0 1px;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover{
+            border-radius: 0;
+            h3{
+                @include text_hover_bottomLine;
+            }
+        }
+        .banner-1,.banner-2,.banner-3{
+            width: 100%;
+        }
+        h3{
+            color: #fff;
+            width: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 0;
+        }
+    }
+    .icon_diamond{
+        background: url(./../images/index/icon_product_diamond-white.svg)no-repeat;
+        background-size: cover;
+    }
+    .icon_sun{
+        background: url(./../images/index/icon_product_sun-white.svg)no-repeat;
+        background-size: cover;
+    }
+    .icon_thunder{
+        background: url(./../images/index/icon_product_thunder-white.svg)no-repeat;
+        background-size: cover;
+    }
+
+  }
+  .footer{
+    position: relative;
+    padding: 24px 15px 20px 15px;
+    .logo{
+        display: block;
+        width: 46px;
+        height: 28px;
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        margin-right: 0;
+    }
+    .contact_us .icon_phone{
+        width: 20px;
+        height: 20px;
+    }
+    .contact_us .icon_mail{
+        width: 20px;
+        height: 20px;
+    }
+    .nav_area{
+        margin-bottom: 0;
+    }
+    .nav_area .nav{
+        display: none;
+    }
+    .nav_area .media{
+        position: absolute;
+        right: 15px;
+        top: 24px;
+    }
+    .copyright_area{
+        margin-top: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyright p{
+        line-height: 19px;
+        font-size:14px;
+        margin-bottom: 7px;
+    }
+    .description{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .description li{
+        margin-right: 0;
+        margin-bottom: 8px;
+        &:hover{
+            margin-bottom: 8px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+}
+@media(max-width:600px){
+  .header{
+    padding: 15px 10px;
+    .nav{
+      font-size: 15px;
+      li{
+        margin-right: 20px;
+      }
+
+    }
+  }
+}
+//520 .footer
+@media(max-width:520px){
+  .footer{
+    position: relative;
+    padding: 24px 15px 20px 15px;
+    .logo{
+        display: block;
+        width: 46px;
+        height: 28px;
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        margin-right: 0;
+    }
+    .contact_us .icon_phone{
+        width: 20px;
+        height: 20px;
+    }
+    .contact_us .icon_mail{
+        width: 20px;
+        height: 20px;
+    }
+    .nav_area{
+        margin-bottom: 0;
+    }
+    .nav_area .nav{
+        display: none;
+    }
+    .nav_area .media{
+        position: absolute;
+        right: 15px;
+        top: 24px;
+    }
+    .copyright_area{
+        margin-top: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyright p{
+        line-height: 19px;
+        font-size:14px;
+        margin-bottom: 7px;
+    }
+    .description{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .description li{
+        margin-right: 0;
+        margin-bottom: 8px;
+        &:hover{
+            margin-bottom: 8px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+}
 @media (max-width:420px){
     h2{
         line-height:33px;
@@ -291,47 +464,6 @@ h2 {
         font-size: 24px;
         margin-bottom: 20px;
     }
-    .index_cassic {
-        padding: 32px 0 32px 0;
-        h2{
-            margin-bottom: 20px;
-        }
-        .types li{
-            position: relative;
-            height: 134px;
-            &:hover{
-                border-radius: 0;
-                h3{
-                    @include text_hover_bottomLine;
-                }
-            }
-            .banner-1,.banner-2,.banner-3{
-                width: 100%;
-            }
-            h3{
-                color: #fff;
-                width: auto;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                padding: 0;
-            }
-        }
-        .icon_diamond{
-            background: url(./../images/index/icon_product_diamond-white.svg)no-repeat;
-            background-size: cover;
-        }
-        .icon_sun{
-            background: url(./../images/index/icon_product_sun-white.svg)no-repeat;
-            background-size: cover;
-        }
-        .icon_thunder{
-            background: url(./../images/index/icon_product_thunder-white.svg)no-repeat;
-            background-size: cover;
-        }
-
-    }
     .index_design{
         padding: 32px 15px 16px 15px;
         h2{
@@ -391,62 +523,13 @@ h2 {
                 padding-top: 0px;
             }
         }
+    }  
+}
+@media (max-width:344px){
+  .index_banner{
+    h2{
+      line-height: 40px;
+      font-size: 30px;
     }
-    .footer{
-        position: relative;
-        padding: 24px 15px 20px 15px;
-        .logo{
-            display: block;
-            width: 46px;
-            height: 28px;
-            position: absolute;
-            bottom: 20px;
-            right: 15px;
-            margin-right: 0;
-        }
-        .contact_us .icon_phone{
-            width: 20px;
-            height: 20px;
-        }
-        .contact_us .icon_mail{
-            width: 20px;
-            height: 20px;
-        }
-        .nav_area{
-            margin-bottom: 0;
-        }
-        .nav_area .nav{
-            display: none;
-        }
-        .nav_area .media{
-            position: absolute;
-            right: 15px;
-            top: 24px;
-        }
-        .copyright_area{
-            margin-top: 18px;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .copyright p{
-            line-height: 19px;
-            font-size:14px;
-            margin-bottom: 7px;
-        }
-        .description{
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .description li{
-            margin-right: 0;
-            margin-bottom: 8px;
-            &:hover{
-                margin-bottom: 8px;
-            }
-            &:last-child{
-                margin-bottom: 0;
-            }
-        }
-    }
-    
+  }
 }
