@@ -228,6 +228,9 @@ h2 {
         height: 24px;
     }
   }
+  .js-to-top{
+    top: calc(100vh - 305px);
+  }
 }
 @media (max-width:680px){
   .index_cassic {
@@ -334,6 +337,9 @@ h2 {
 }
 }
 @media(max-width:600px){
+  .index_banner_wrap{
+    height: calc(100vh - 78px);
+  }
   .header{
     padding: 15px 10px;
     .nav{
@@ -405,6 +411,9 @@ h2 {
 }
 }
 @media (max-width:420px){
+  .index_banner_wrap{
+    height: calc(100vh - 142px);
+  }
     h2{
         line-height:33px;
         font-size: 24px;
@@ -518,7 +527,7 @@ h2 {
         }
         label,input{
             line-height:20px;
-            font-size: 14px;
+            font-size: 16px;
         }
         li.button{
             button{
@@ -527,6 +536,9 @@ h2 {
             }
         }
     }  
+    .js-to-top{
+      top: calc(100% - 254px);//mobile
+    }
 }
 @media (max-width:344px){
   .index_banner{

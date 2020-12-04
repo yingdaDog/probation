@@ -1,13 +1,25 @@
+.index_banner_wrap{
+  height: calc(100vh - 108px);
+  .swiper-pagination-bullet{
+    background: #fff;
+  }
+}
 .index_banner {
   background: url(./../images/index/banner.png) no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 840px;
-  line-height:840px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  .container{
+    padding-right: calc((100% - 1110px) / 2);
+  }
 }
 .index_banner .container {
   text-align: right;
-  vertical-align: middle;
+  margin: 0;
 }
 .index_banner h2 {
   line-height: 5.625rem;
@@ -318,6 +330,10 @@
   .container {
     max-width: 730px;
   }
+  input,textarea{
+    border: 1px solid #000;
+    font-size: 16px;
+  }
   li {
     margin-bottom: 16px;
     &:last-child {
@@ -326,55 +342,46 @@
   }
   li.checkbox {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
+    position: relative;
     label,
     input {
-      display: inline-block;
       width: auto;
       cursor: pointer;
     }
-    label{
-      display: flex;
-    }
-    label .box{
+    input{
       display: inline-block;
       position: relative;
       width: 20px;
       height: 20px;
-      background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+      margin: 0;
+      padding: 0;
+      background: #fff;
       border-radius: 4px;
-      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-      &:after {
-        content: '';
-        width: 9px;
-        height: 5px;
-        position: absolute;
-        top: 4px;
-        left: 4px;
-        border: 3px solid #333;
-        border-top: none;
-        border-right: none;
-        background: transparent;
-        opacity: 0;
-        transform: rotate(-45deg);
-      }
-      &:hover::after {
-        opacity: 0.5;
-      }
-    }
-    label p {
-      display: inline-block;
-      margin-left: 4px;
-      padding-top: 3px;
-      width: calc(100% - 20px);
-    }
-    input {
-      position: absolute;
-      &:checked + label .box:after {
-        transition: all .2s  ease-in-out;
+      &:checked + .icon_check{
         opacity: 1;
+        transition: all 0.2s ease-in-out;
       }
-    }  
+    }
+    .icon_check{
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    label{
+      margin-left: 4px;
+      padding-top: 1px;
+      width: calc(100% - 20px);
+      line-height: 20px;
+    }
     }
 
   li.button {
@@ -395,9 +402,6 @@
         letter-spacing:5px;
         transition: all .2s ease-in-out;
       }
-      &:active{
-        background: #007aff;
-      }
     }
   }
   h3 {
@@ -408,8 +412,8 @@
   label,
   input {
     display: block;
-    line-height: 1.375rem;
-    font-size: 1rem;
+    line-height: 20px;
+    font-size: 16px;
   }
   input,
   textarea {

@@ -3,14 +3,14 @@
     display: inline-block;
     background: #AA0601;
     right: 15px;
-    bottom: 23vh;
+    top: calc(100vh - 402px);
     width: 35px;
     height: 35px;
     opacity: 0;
     border-radius: 100%;
     transition: 0.3s ease-in-out;
     cursor: none;
-    z-index: 1;
+    z-index: 10;
   &:after,
   &:before {
     content: "";
@@ -34,13 +34,7 @@
   }
   &.active {
     transition: 0.3s ease-in-out;
-    opacity: .6;
+    opacity: 0.6;
     cursor: pointer;
-    &:hover {
-    //   &:after,
-    //   &:before {
-    //     animation: js-to-top-active 0.7s linear infinite;
-    //   }
-    }
   }
 }
