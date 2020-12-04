@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <!--swiper.js-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
   </head>
   <body>
     <div class="header">
@@ -19,6 +20,7 @@
       </ul>
     </div>
     <div class="swiper-container">
+      <div class="swiper-pagination"></div>
       <div class="swiper-wrapper">
         <div class="swiper-slide index_banner">
           <div class="container">
@@ -34,7 +36,15 @@
             </h2>
           </div>
         </div>
+        <div class="swiper-slide index_banner">
+          <div class="container">
+            <h2>
+              <span>Promise-Desert 2020 早春系列</span><br />看得清，才能看得遠
+            </h2>
+          </div>
+        </div>
       </div>
+     
     </div>
     <div class="index_profession">
       <div class="container">
@@ -168,7 +178,7 @@
               </li>
               <li class="checkbox">
                   <input type="checkbox" id ="checkbox">
-                  <label for="checkbox">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                  <label for="checkbox"><div class="box"></div><p>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p></label>
               </li>
               <li class = "button"><button>確認送出</button></li>
             </ul>

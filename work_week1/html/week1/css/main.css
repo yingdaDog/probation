@@ -406,6 +406,48 @@ table {
   width: auto;
   cursor: pointer;
 }
+.index_contactUs li.checkbox label {
+  display: flex;
+}
+.index_contactUs li.checkbox label .box {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.index_contactUs li.checkbox label .box:after {
+  content: "";
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+.index_contactUs li.checkbox label .box:hover::after {
+  opacity: 0.5;
+}
+.index_contactUs li.checkbox label p {
+  display: inline-block;
+  margin-left: 4px;
+  padding-top: 3px;
+  width: calc(100% - 20px);
+}
+.index_contactUs li.checkbox input {
+  position: absolute;
+}
+.index_contactUs li.checkbox input:checked + label .box:after {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
 .index_contactUs li.button {
   text-align: center;
 }
@@ -458,7 +500,7 @@ table {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 .header .logo {
   width: 80px;
