@@ -1,0 +1,11 @@
+@mixin text_hover_bottomLine{
+    background-position: center bottom;
+    background-image: linear-gradient(#fff,#fff);
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    &:hover,&:active{
+        background-size: 100% 1px;
+        transition: all .2s ease-in-out;
+    }
+
+}

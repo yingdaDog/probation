@@ -1,0 +1,42 @@
+.js-to-top {
+    position: fixed;
+    // display: inline-block;
+    visibility: visible;
+    display: block;
+    background: #AA0601;
+    right: 15px;
+    top: calc(100vh - 402px);
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    border-radius: 100%;
+    transition: 0.3s ease-in-out;
+    cursor: none;
+    z-index: 20;
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 4px;
+    height: 15px;
+  }
+  &:before {
+    transform: translate(calc((-50% + 4px)), -50%) rotate(-45deg);
+  }
+  &:after {
+    transform: translate(calc((-50% - 4px)), -50%) rotate(45deg);
+  }
+  &:active {
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+  }
+  &.active {
+    transition: 0.3s ease-in-out;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+}
